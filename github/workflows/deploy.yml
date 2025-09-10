@@ -1,0 +1,22 @@
+name: Deploy Static Site to Azure
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Upload to Azure Storage
+        uses: azure/CLI@v1
+        with:
+          inlineScript: |
+            az storage blob upload-batch \
+              --account-name aishastportfolio \
+              --destination '$web' \
+              --source . \
+              --overwrite
