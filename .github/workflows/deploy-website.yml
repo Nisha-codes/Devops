@@ -23,5 +23,7 @@ jobs:
             az storage blob upload-batch \
               --account-name aishastportfolio \
               --destination '$web' \
-              --source . \
+              --source ./my_portfolio \
               --overwrite
+
+            echo "deployment completed!"

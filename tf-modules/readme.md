@@ -1,0 +1,1 @@
+Create a module to deploy a full static website
