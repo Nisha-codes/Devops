@@ -21,9 +21,10 @@ jobs:
         run: |
          
             az storage blob upload-batch \
-              --account-name aishastportfolio \
+              --account-name nanaportstorageaccount1\
               --destination '$web' \
               --source ./my_portfolio \
+              -- auth-mode login \
               --overwrite
 
             echo "deployment completed!"

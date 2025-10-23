@@ -1,6 +1,6 @@
-Create a module to deploy a full static website
-Use terraform to create resources
-Deploy the website to azure
-Run cicd on githbu
+Create a module to deploy a full static website - DONE
+Use terraform to create resources - DONE
+Deploy the website to azure - DONE
+Run cicd on github - 
 
 Next meeting is Wednesday.
