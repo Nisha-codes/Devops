@@ -1,7 +1,7 @@
-variable "portfolio-rg" {
+variable "portfolio_rg" {
   description = "The name of the resource group."
   type        = string
-    default = "rgroup-portfolio"
+  default = "rgroup-portfolio"
 }
 
 variable "location" {
@@ -10,14 +10,7 @@ variable "location" {
   default = "UK South"
 }
 
-variable "portfoliostorageacc" {
+variable "storage_account_name" {
   description = "The name of the storage account."
   type        = string
-  default = "nanaportstorageaccount1"
-}
-
-variable "tags" {
-  description = "A map of tags to assign to the resource."
-  type        = map(string)
-  default     = {}
 }
