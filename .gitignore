@@ -1,0 +1,16 @@
+cat > .gitignore << 'EOF'
+# Terraform files to ignore
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+*.tfvars
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# OS files
+.DS_Store
+EOF
