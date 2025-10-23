@@ -8,6 +8,7 @@ resource "azurerm_resource_group" "name" {
   location = var.location
   tags     = var.tags
 }
+
 resource "azurerm_storage_account" "name" {
   name                     = var.portfoliostorageacc
   resource_group_name      = azurerm_resource_group.name.name
