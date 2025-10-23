@@ -2,7 +2,7 @@ name: Deploy Infrastructure resources with terraform
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "ayomide-fix" ]
 
 jobs:
   deploy:
