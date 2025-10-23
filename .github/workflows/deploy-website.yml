@@ -24,7 +24,7 @@ jobs:
               --account-name nanaportstorageaccount1\
               --destination '$web' \
               --source ./my_portfolio \
-              --auth-mode login \
+              --auth-mode key \
               --overwrite
 
             echo "deployment completed!"
